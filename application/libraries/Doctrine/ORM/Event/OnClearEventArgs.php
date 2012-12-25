@@ -44,7 +44,7 @@ class OnClearEventArgs extends \Doctrine\Common\EventArgs
      * Constructor.
      *
      * @param \Doctrine\ORM\EntityManager $em
-     * @param string|null                 $entityClass Optional entity class.
+     * @param string $entityClass Optional entity class
      */
     public function __construct($em, $entityClass = null)
     {
@@ -53,7 +53,7 @@ class OnClearEventArgs extends \Doctrine\Common\EventArgs
     }
 
     /**
-     * Retrieves associated EntityManager.
+     * Retrieve associated EntityManager.
      *
      * @return \Doctrine\ORM\EntityManager
      */
@@ -65,7 +65,7 @@ class OnClearEventArgs extends \Doctrine\Common\EventArgs
     /**
      * Name of the entity class that is cleared, or empty if all are cleared.
      *
-     * @return string|null
+     * @return string
      */
     public function getEntityClass()
     {
@@ -73,7 +73,7 @@ class OnClearEventArgs extends \Doctrine\Common\EventArgs
     }
 
     /**
-     * Checks if event clears all entities.
+     * Check if event clears all entities.
      *
      * @return bool
      */
