@@ -4,3 +4,4 @@ htaccess
 index.html
 classes/trackback/documentarion/**/*
 trackback.txt
+application/config/database.php
